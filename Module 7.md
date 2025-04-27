@@ -1,27 +1,44 @@
-EXP NO:1 C PROGRAM FOR ARRAY OF STRUCTURE TO CHECK ELIGIBILITY FOR THE VACCINE.
+EXP NO:1 C PROGRAM FOR ARRAY OF STRUCTURE TO CHECK ELIGIBILITY FOR THE VOTING.
 
 Aim:
-To write a C program for array of structure to check eligibility for the vaccine person age above 6 years of age.
+To write a C program for array of structure to check eligibility  person age above 18 years of age.
 
 Algorithm:
 1.	Declare structure eligible with age (integer) and n (character array)
 2.	Declare variable e of type eligible
 3.	Input age and name using scanf, store in e
 4.	If e.age <= 6
--	Print "Vaccine Eligibility: No"
+-	Print " Eligibility: No"
 Else
--	Print "Vaccine Eligibility: Yes"
+-	Print " Eligibility: Yes"
 5.	Print details (e.age, e.n)
 6.	Return 0
  
 Program:
 
-//type your code here
+```
+#include<stdio.h>
+struct e{
+    int a;
+    char n[100];
+};
+int main(){
+    struct e p;
+    scanf("%d%s",&p.a,p.n);
+    printf("Age:%d\nName:%s\n",p.a,p.n);
+    if(p.a<=18){
+        printf("eligibility:no");
+    }else{
+        printf("eligibility:yes");
+    }
+}
+```
 
 
 Output:
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/6a520adf-60dd-4637-9b0e-d4c052607aec)
+
 
 
 Result:
@@ -44,7 +61,33 @@ Algorithm:
  
 Program:
 
-//type your code here
+```
+#include <stdio.h>
+
+
+struct FirstStruct
+{
+	int Num1;
+	int Num2;
+};
+
+int add(int Num1,int Num2){
+    return(Num1+Num2);
+}
+
+
+
+struct FirstStruct i;
+
+int main()
+{
+   scanf("%d%d",&i.Num1,&i.Num2);
+   printf("%d",add(i.Num1,i.Num2));
+	
+	return 0;
+}
+
+```
 
 
 
@@ -52,7 +95,8 @@ Program:
 Output:
 
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/cf616e27-accb-4113-8768-22dcff065086)
+
 
 
 
@@ -86,7 +130,31 @@ Use scanf to input the file name into the name array.
  
 Program:
 
-//type your code here
+```
+#include <stdio.h>
+int main()
+{
+   char name[50];
+   scanf("%s",name);
+   FILE *fptr;
+   fptr = (fopen("name","w"));
+   if(fptr == NULL)
+   {
+       printf("Error!");
+       
+   }
+
+   else
+   {
+      printf("%s File Created Successfully\n",name);
+      printf("%s File Opened\n",name);
+   }
+
+   fclose(fptr);
+   printf("%s File Closed\n",name);
+   return 0;
+}
+```
 
 
 
@@ -94,7 +162,8 @@ Program:
 Output:
 
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/aa62c518-ba60-435e-a9fc-9f4830dd88bc)
+
 
 
 
@@ -132,16 +201,46 @@ Use scanf to input the file name into the name array and the number of strings i
 5.	Return 0 to indicate successful program execution.
  
 Program:
+```
+#include <stdio.h>
+int main()
+{
+   char name[50],ch;
+   int i,num;
 
-//type your code here
+   scanf("%s", name);
+   scanf("%d", &num);
+   
+   FILE *fptr;
+   fptr=(fopen("name","w+"));
+   if(fptr==NULL)
+   {
+       printf("Error!");
+       
+   }
+   else
+   {
+   printf("%s Opened\n",name);}
+   for(i = 0; i < num; ++i)
+   {
+      
+      scanf("%c",&ch);
 
+      fprintf(fptr,"%c \n",ch);
+   }
+   printf("Data added Successfully");
+   fclose(fptr);
+   return 0;
+}
 
+```
 
 
 Output:
 
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/f8b49897-8c55-4982-a0b8-7793296bc93e)
+
 
 
 
@@ -187,7 +286,37 @@ Algorithm:
 
 Program:
 
-//type your code here
+```
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct {
+    char subject[30];
+    int marks;
+} Subject;
+
+int main() {
+    int n; 
+    scanf("%d", &n);
+
+    Subject* subjects = (Subject*)malloc(n * sizeof(Subject));
+   
+
+    for (int i = 0; i < n; i++) {
+        scanf("%s", subjects[i].subject);
+        scanf("%d", &subjects[i].marks);
+    }
+
+    for (int i = 0; i < n; i++) {
+        printf("%s  %d\n", subjects[i].subject, subjects[i].marks);
+    }
+
+    free(subjects);
+
+    return 0;
+}
+
+```
 
 
 
@@ -195,7 +324,8 @@ Program:
 Output:
 
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/0a26719d-7a4a-4a7e-a5a8-4bf4bc23c45f)
+
 
 
 
