@@ -10,11 +10,13 @@ Algorithm:
  
 Program:
 
-//type your code here
+![image](https://github.com/user-attachments/assets/df1f7c97-7243-402d-b314-986caf7312ef)
+
 
 Output:
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/f6f42e51-92af-4fc7-a761-498e45036ac0)
+
 
 
 
@@ -34,11 +36,13 @@ Algorithm:
  
 Program:
 
-//type your code here
+![image](https://github.com/user-attachments/assets/fbbf27f5-6d47-453a-9089-3813e9db26e4)
+
 
 Output:
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/e902743e-0106-4d8a-b3b7-541ed9907115)
+
 
  
 Result:
@@ -57,12 +61,13 @@ Algorithm:
 4.	Move to the next node by updating the temp pointer to point to the next node (temp = temp->next).
  
 Program:
+![image](https://github.com/user-attachments/assets/2730c6f7-42ed-49e5-a708-243922211efa)
 
-//type your code here
 
 Output:
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/9a027ca6-946e-4a4e-a48e-d190b681d0d6)
+
 
 
 Result:
@@ -83,11 +88,12 @@ Algorithm:
  
 Program:
 
-//type your code here
+![image](https://github.com/user-attachments/assets/afe12326-47ef-443c-ac22-5d0d7e4c8fc3)
 
 Output:
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/d0b032b6-5d20-480f-8575-f2966f4e4a86)
+
 
 
 Result:
@@ -124,12 +130,13 @@ o	If the element is not found in any node, print a message indicating the elemen
 
 
 Program:
+![image](https://github.com/user-attachments/assets/426451b0-54a0-44c6-8f06-96f0a3aa7aa0)
 
-//type your code here
 
 Output:
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/5dadf27b-98db-4898-91c2-57d964762995)
+
 
 
 
