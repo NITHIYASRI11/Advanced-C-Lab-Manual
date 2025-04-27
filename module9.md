@@ -13,19 +13,20 @@ Algorithm:
  
 Program:
 
-//type your code here
+![Screenshot 2025-04-27 170330](https://github.com/user-attachments/assets/4fddf905-930b-41db-b875-84d8045d83cc)
+
 
 Output:
 
-//paste your output here
 
-
+![Screenshot 2025-04-27 170412](https://github.com/user-attachments/assets/9d740145-d1a4-4fdb-ab77-fbfdf4b7f097)
 
 Result:
 Thus, the program to display stack elements using an array is verified successfully.
  
 
 EXP NO:12  PROGRAM TO PUSH THE GIVEN ELEMENT IN TO A STACK USING ARRAY.
+
 Aim:
 To create a C program to push the given element in to a stack using array.
 Algorithm:
@@ -36,12 +37,13 @@ Algorithm:
  
 Program:
 
-//type your code here
+![Screenshot 2025-04-27 170512](https://github.com/user-attachments/assets/a5991c28-eeab-4b67-9091-e050989afdd2)
 
 Output:
 
-//paste your output here
 
+
+![Screenshot 2025-04-27 170526](https://github.com/user-attachments/assets/ab3264a3-234b-4336-8330-8a1228d5c8f9)
 
 
 
@@ -62,11 +64,13 @@ Algorithm:
  
 Program:
 
-//type your code here
+
+![Screenshot 2025-04-27 170605](https://github.com/user-attachments/assets/088ae31b-cec7-40a3-9562-bd5b8bd4146c)
 
 Output:
 
-//paste your output here
+![Screenshot 2025-04-27 170631](https://github.com/user-attachments/assets/b8a8d995-1541-4e7d-b08e-7ee5df1ada6e)
+
 
 
 Result:
@@ -86,11 +90,12 @@ Algorithm:
 
 Program:
 
-//type your code here
+ ![Screenshot 2025-04-27 170717](https://github.com/user-attachments/assets/096109c7-5ffc-4649-b2b5-2a6433649b08)
+
 
 Output:
 
-//paste your output here
+![Screenshot 2025-04-27 170733](https://github.com/user-attachments/assets/93eabd6c-2cb3-4860-964d-7967396837a2)
 
 Result:
 Thus, the program to insert elements in queue using array is verified successfully.
@@ -121,11 +126,12 @@ o	After deletion, check if the front pointer has passed the rear pointer (front 
 
 Program:
 
-//type your code here
+
+![Screenshot 2025-04-27 170801](https://github.com/user-attachments/assets/23c9cfa0-a51e-4ee3-90be-50f0532fd2d7)
 
 Output:
 
-//paste your output here
+![Screenshot 2025-04-27 170821](https://github.com/user-attachments/assets/9cc6bf44-441c-4591-a4b2-c85e0976af2f)
 
 
 Result:
