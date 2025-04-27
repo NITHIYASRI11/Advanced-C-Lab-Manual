@@ -13,11 +13,13 @@ Algorithm:
  
 Program:
 
-//type your code here
+![image](https://github.com/user-attachments/assets/90a44fb0-7af6-4243-aed8-e44ffdf1837b)
+
 
 Output:
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/63938372-d525-4f08-8d23-17b0419baf21)
+
 
 
 
@@ -36,11 +38,13 @@ Algorithm:
  
 Program:
 
-//type your code here
+![image](https://github.com/user-attachments/assets/00e83250-8b2d-4ae1-ad21-9575e7f45aa8)
+
 
 Output:
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/d9fe7cf2-b826-4af1-9505-943e3e958d9d)
+
 
 
 
@@ -62,11 +66,13 @@ Algorithm:
  
 Program:
 
-//type your code here
+![image](https://github.com/user-attachments/assets/78506823-be3b-4fd3-bfab-6561782e6fb1)
+
 
 Output:
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/fc960bd2-4d20-45e9-9c98-f9b373c305cb)
+
 
 
 Result:
@@ -86,11 +92,13 @@ Algorithm:
 
 Program:
 
-//type your code here
+![image](https://github.com/user-attachments/assets/d467ab32-8aac-451f-aa47-0d766bdb6488)
+
 
 Output:
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/de78e495-622c-4175-a2f9-5a3da06733cd)
+
 
 Result:
 Thus, the program to insert elements in queue using array is verified successfully.
@@ -121,11 +129,13 @@ o	After deletion, check if the front pointer has passed the rear pointer (front 
 
 Program:
 
-//type your code here
+![image](https://github.com/user-attachments/assets/b4865f15-c11a-4202-9fa1-3fff0f979ece)
+
 
 Output:
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/a08101a7-d477-4a72-9beb-c38eaa65c720)
+
 
 
 Result:
