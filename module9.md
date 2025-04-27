@@ -12,12 +12,28 @@ Algorithm:
 7.	Use the display function to visualize the stack's contents
  
 Program:
+```
+int stack[100],top=-1,i;
+void display()
+{
+    if(top==-1){
+           printf("stack is empty\n");
+    } 
+    else{
+       
+    for(i=top;i>=0;i--)
+    {
+        
+        printf("%d->",stack[top--]);
+    }
+    }
+}
 
-//type your code here
-
+```
 Output:
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/1dbf0fba-9882-48a0-b774-6ee5d58c6f19)
+
 
 
 
@@ -36,11 +52,26 @@ Algorithm:
  
 Program:
 
-//type your code here
-
+```
+int size=3,top=-1;
+float stack[100];
+void push (float data)
+{
+    if (top == size )
+    {
+    printf("stack is full\n");
+    }
+    else
+    {
+        top = top +1;
+        stack[top] = data;
+    }
+}
+```
 Output:
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/454e15f6-5fa6-4425-891d-b541eb1aeda1)
+
 
 
 
@@ -62,11 +93,28 @@ Algorithm:
  
 Program:
 
-//type your code here
+```
+float queue[50];
+int rear=-1, front=-1;
+void display()
+{
+    int i=0;
+    if((front=-1)&&(rear==-1))
+    printf("No elements to display\n");
+    else
+    {
+        for(i=front+1;i<=rear;i++)
+        {
+            printf("%.1f\n", queue[i]);
+        }
+    }
+}
+```
 
 Output:
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/0f330dbd-9b03-4cd4-bb6b-9f6456a2c996)
+
 
 
 Result:
@@ -86,11 +134,29 @@ Algorithm:
 
 Program:
 
-//type your code here
+```
+int size=3, rear=-1, front=-1;
+float queue[50];
+void enqueue(float data)
+{
+    if(rear==-1&&front==-1){
+        front=0;
+        rear=0;
+        queue[rear]=data;
+    }
+    else
+    {
+        rear=(rear+1)%size;
+        queue[rear]=data;
+    }
+}
+
+```
 
 Output:
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/a72340eb-fa7e-4c3a-a5d6-537d51152630)
+
 
 Result:
 Thus, the program to insert elements in queue using array is verified successfully.
@@ -121,11 +187,26 @@ o	After deletion, check if the front pointer has passed the rear pointer (front 
 
 Program:
 
-//type your code here
+```
+int front, rear;
+void dequeue()
+{
+    if((front=-1)&&(rear==-1))
+    {
+        printf("Queue is empty");
+       
+    }
+    else
+    {
+        front=front+2;
+    }
+}
+```
 
 Output:
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/a28ce940-723b-44d7-be3f-4de73fd929ff)
+
 
 
 Result:
