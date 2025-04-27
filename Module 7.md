@@ -1,27 +1,30 @@
-EXP NO:1 C PROGRAM FOR ARRAY OF STRUCTURE TO CHECK ELIGIBILITY FOR THE VACCINE.
+EXP NO:1 C PROGRAM FOR ARRAY OF STRUCTURE TO CHECK ELIGIBILITY OF THE PERSON TO VOTE IN ELECTION.
 
 Aim:
-To write a C program for array of structure to check eligibility for the vaccine person age above 6 years of age.
+To write a C program for array of structure to check eligibility for the election person age above 18 years of age.
 
 Algorithm:
 1.	Declare structure eligible with age (integer) and n (character array)
 2.	Declare variable e of type eligible
 3.	Input age and name using scanf, store in e
 4.	If e.age <= 6
--	Print "Vaccine Eligibility: No"
+-	Print " Eligibility: No"
 Else
--	Print "Vaccine Eligibility: Yes"
+-	Print " Eligibility: Yes"
 5.	Print details (e.age, e.n)
 6.	Return 0
  
 Program:
 
-//type your code here
+
+![image](https://github.com/user-attachments/assets/15695604-8c89-4a27-a143-2b4a6b22c9ae)
+
 
 
 Output:
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/b47605cf-30a0-47fa-8495-e91ad5910d36)
+
 
 
 Result:
@@ -44,7 +47,8 @@ Algorithm:
  
 Program:
 
-//type your code here
+![image](https://github.com/user-attachments/assets/bc51b795-ffcd-4b7c-9f1e-81dbb4458c8e)
+
 
 
 
@@ -52,7 +56,8 @@ Program:
 Output:
 
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/d3900852-bede-4b3c-9d42-fd840b79a814)
+
 
 
 
@@ -86,7 +91,7 @@ Use scanf to input the file name into the name array.
  
 Program:
 
-//type your code here
+![image](https://github.com/user-attachments/assets/191adfd7-6881-4d04-b2e2-33acbc920228)
 
 
 
@@ -94,7 +99,8 @@ Program:
 Output:
 
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/736a6ad0-82b9-4412-b119-1ccfef64e3d6)
+
 
 
 
@@ -133,7 +139,8 @@ Use scanf to input the file name into the name array and the number of strings i
  
 Program:
 
-//type your code here
+![image](https://github.com/user-attachments/assets/3a561bc5-3c42-4f49-9679-f9670fb7f240)
+
 
 
 
@@ -141,7 +148,8 @@ Program:
 Output:
 
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/4ba5729a-8d33-416c-a380-90c79289ac71)
+
 
 
 
@@ -187,15 +195,16 @@ Algorithm:
 
 Program:
 
-//type your code here
+![image](https://github.com/user-attachments/assets/48472282-4e5e-4cee-aaa4-e78bb7f97496)
+
 
 
 
 
 Output:
 
+![image](https://github.com/user-attachments/assets/2c6af77d-37de-4ab7-9fc8-0f32e9077866)
 
-//paste your output here
 
 
 
