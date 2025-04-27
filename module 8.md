@@ -15,8 +15,47 @@ Algorithm:
 4.	Exit the program.
  
 Program:
+```
+#include<stdio.h>
+int main(){
+    int num;
+    scanf("%d",&num);
+    switch(num){
+        case 71:
+        printf("seventy one");
+        break;
+        case 72:
+        printf("seventy two");
+        break;
+        case 73:
+        printf("seventy three");
+        break;
+        case 74:
+        printf("seventy four");
+        break;
+         case 75:
+        printf("seventy five");
+        break;
+         case 76:
+        printf("seventy six");
+        break;
+         case 77:
+        printf("seventy seven");
+        break;
+         case 78:
+        printf("seventy eight");
+        break;
+         case 79:
+        printf("seventy nine");
+        break;
+         default:
+        printf("Greater than 79");
+        break;
+    }
+   return 0;
+}
 
-//type your code here
+```
 
 
 
@@ -24,7 +63,7 @@ Program:
 Output:
 
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/131b3341-f3c5-4691-950f-a60bb8b618e8)
 
 
 
@@ -46,16 +85,35 @@ Algorithm:
 6.	End
  
 Program:
+```
 
-//type your code here
+#include<stdio.h>
+#include<string.h>
+int main(){
+ char s[20];
+ int i,n[10]={0};
+ scanf("%[^\n]",s);
+ for(i=0;i<strlen(s);i++){
+     if(s[i]>='0'&&s[i]<='9'){
+         n[s[i]-'0']++;
+     }
+ }
+ for(i=0;i<10;i++){
+     printf("%d ",n[i]);
+   
+ }
+  return 0;   
+ 
+}
 
 
-
+```
 
 Output:
 
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/1f0e7042-c548-4fa4-9f42-cfdb3bc2c799)
+
 
 
 
@@ -83,16 +141,71 @@ Free the memory allocated for each string in s Free the memory allocated for s
 7.	End
  
 Program:
+```
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-//type your code here
+int next_permutation(int n, char **s)
+{
+
+    int k = -1;
+    for (int i = 0; i < n-1; i++) {
+        if (strcmp(s[i], s[i+1]) < 0)
+            k = i;
+    }
+    if (k == -1) return 0; 
+
+    int l = -1;
+    for (int i = k+1; i < n; i++) {
+        if (strcmp(s[k], s[i]) < 0)
+            l = i;
+    }
+
+    char *tmp = s[k];
+    s[k] = s[l];
+    s[l] = tmp;
+
+    int i = k+1, j = n-1;
+    while (i < j) {
+        tmp = s[i];
+        s[i++] = s[j];
+        s[j--] = tmp;
+    }
+
+    return 1; 
+}
+
+int main()
+{
+	char **s;
+	int n;
+	scanf("%d", &n);
+	s = calloc(n, sizeof(char*));
+	for (int i = 0; i < n; i++)
+	{
+		s[i] = calloc(11, sizeof(char));
+		scanf("%s", s[i]);
+	}
+	do
+	{
+		for (int i = 0; i < n; i++)
+			printf("%s%c", s[i], i == n - 1 ? '\n' : ' ');
+	} while (next_permutation(n, s));
+	for (int i = 0; i < n; i++)
+		free(s[i]);
+	free(s);
+	return 0;
+}
 
 
-
+```
 
 Output:
 
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/0aa3b21b-bfd7-4f53-a5de-67f3bfe40107)
+
 
 
 
@@ -116,16 +229,45 @@ Algorithm:
 7.	End
  
 Program:
+```
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
 
-//type your code here
+void check(int i, int j, int first, int last, int n) {
+  if(n >=1 )
+  {
+    if (i == first || i == last || j == first || j == last)
+        printf("%d ", n);
+    else
+        check(i, j, first + 1, last - 1, n - 1);
+  }
+}
+
+int main() 
+{
+    int n;
+    scanf("%d", &n);
+    int rows = 2 * n - 1;
+
+    for (int i = 0; i < rows; i ++) {
+        for (int j = 0; j < rows; j ++) {
+            check(i, j, 0, rows - 1, n);
+        }
+        printf("\n");
+    }
+    return 0;
+}
 
 
-
+```
 
 Output:
 
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/6439cfa8-87d7-472f-bd43-aec65f4a1d58)
+
 
 
 
@@ -156,15 +298,14 @@ o	Call the square() function and display the result.
 
 Program:
 
-//type your code here
-
 
 
 
 Output:
 
 
-//paste your output here
+
+
 
 
 
