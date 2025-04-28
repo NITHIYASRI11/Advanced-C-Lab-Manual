@@ -15,16 +15,54 @@ Algorithm:
 4.	Exit the program.
  
 Program:
+```
+#include<stdio.h>
+int main(){
+    int num;
+    scanf("%d",&num);
+    switch(num){
+        case 71:
+        printf("seventy one");
+        break;
+        case 72:
+        printf("seventy two");
+        break;
+        case 73:
+        printf("seventy three");
+        break;
+        case 74:
+        printf("seventy four");
+        break;
+         case 75:
+        printf("seventy five");
+        break;
+         case 76:
+        printf("seventy six");
+        break;
+         case 77:
+        printf("seventy seven");
+        break;
+         case 78:
+        printf("seventy eight");
+        break;
+         case 79:
+        printf("seventy nine");
+        break;
+         default:
+        printf("Greater than 79");
+        break;
+    }
+   return 0;
+}
 
-//type your code here
 
-
-
+```
 
 Output:
 
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/5f43f372-93cc-4b12-96be-a67a1eb248ba)
+
 
 
 
@@ -46,16 +84,35 @@ Algorithm:
 6.	End
  
 Program:
+```
+#include<stdio.h>
+#include<string.h>
+int  main(){
+char s[20];
+int i, a[10]={0};
+scanf("%[^\n]",s);
+for(i=0;i<strlen(s);i++){
+    if(s[i]>='0'&&s[i]<='9'){
+        a[s[i]-'0']++;
+    }
+}
+    for(i=0;i<10;i++){
+        printf("%d ",a[i]);
+    }
 
-//type your code here
+    return 0;
+}
 
 
 
+
+```
 
 Output:
 
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/7f7bbba9-c794-42e3-9f43-4a2f7c676ed5)
+
 
 
 
@@ -83,8 +140,52 @@ Free the memory allocated for each string in s Free the memory allocated for s
 7.	End
  
 Program:
-
-//type your code here
+```
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+int o(int n,char **s){
+    int k=-1,i,l=1,j;
+    for(i=0;i<n-1;i++){
+        if(strcmp(s[i],s[i+1])<0)
+        k=i;
+    }
+    if(k==-1) return 0;
+    for(i=k+1;i<n;i++){
+        if(strcmp(s[k],s[i])<0)
+        l=i;
+    }
+    char *tmp=s[k];
+    s[k]=s[l];
+    s[l]=tmp;
+    i=k+1,j=n-1;
+    while(i<j){
+        tmp=s[i];
+        s[i++]=s[j];
+        s[j--]=tmp;
+    }
+    return 1;
+}
+int main(){
+    char **s;
+    int n,i;
+    scanf("%d",&n);
+    s=calloc(n,sizeof(char*));
+    for(i=0;i<n;i++){
+        s[i]=calloc(11,sizeof(char));
+        scanf("%s",s[i]);
+    }
+    do{
+        for(i=0;i<n;i++){
+            printf("%s%c",s[i],i==n-1?'\n':' ');
+        }
+    }while(o(n,s)); 
+    for(i=0;i<n;i++){
+        free(s[i]);
+    }free(s);
+    return 0;
+}
+```
 
 
 
@@ -92,7 +193,8 @@ Program:
 Output:
 
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/ebb118c0-923e-4a33-bd53-59e4018c5f46)
+
 
 
 
@@ -117,7 +219,37 @@ Algorithm:
  
 Program:
 
-//type your code here
+```
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+void check(int i, int j, int first, int last, int n) {
+  if(n >=1 )
+  {
+    if (i == first || i == last || j == first || j == last)
+        printf("%d ", n);
+    else
+        check(i, j, first + 1, last - 1, n - 1);
+  }
+}
+
+int main() 
+{
+    int n;
+    scanf("%d", &n);
+    int rows = 2 * n - 1;
+
+    for (int i = 0; i < rows; i ++) {
+        for (int j = 0; j < rows; j ++) {
+            check(i, j, 0, rows - 1, n);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+```
 
 
 
@@ -125,7 +257,7 @@ Program:
 Output:
 
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/dccf6aa9-589c-47f8-9443-0061a864eb8d)
 
 
 
@@ -156,7 +288,30 @@ o	Call the square() function and display the result.
 
 Program:
 
-//type your code here
+```
+#include <stdio.h>
+
+int getNumberFromUser() {
+    int num;
+   
+    scanf("%d", &num);
+    return num;
+}
+
+float calculateSquare(int n) {
+    return (float)n * n;
+}
+
+int main() {
+    int number = getNumberFromUser();
+    float square = calculateSquare(number);
+
+    printf("The square of %d is : %.2f\n", number, square);
+    return 0;
+}
+
+
+```
 
 
 
@@ -164,7 +319,8 @@ Program:
 Output:
 
 
-//paste your output here
+
+![image](https://github.com/user-attachments/assets/7e6369b7-69c6-437a-9680-72d2754cbb96)
 
 
 
